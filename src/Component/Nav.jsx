@@ -43,7 +43,7 @@ const Nav = () => {
         {/* Desktop Navbar Links */}
         <div className="flex-none hidden lg:flex">
           <ul className="menu menu-horizontal flex space-x-8 text-[#61CE70]">
-            {["About", "Skills", "Projects", "Certificates", "Experience", "Education", "Contact"].map((item, idx) => (
+            {["About", "Skills", "Projects", "Certificates", "Experience", "Achievements", "Education", "Contact"].map((item, idx) => (
               <li key={idx}>
                 <a
                   className="relative transition-all duration-300 box hover:text-green-400"
@@ -75,7 +75,7 @@ const Nav = () => {
                 className="menu menu-sm space-y-10 absolute -ml-2 duration-125 z-[1] p-2 shadow bg-base-100 rounded-box py-4 h-screen w-screen text-center items-center pt-10 text-black"
                 onClick={closeDropdown}
               >
-                {["About", "Skills", "Projects", "Education", "Contact"].map((item, idx) => (
+                {["About", "Skills", "Projects", "Certificates", "Experience", "Achievements", "Education", "Contact"].map((item, idx) => (
                   <li key={idx}>
                     <a
                       href={`#${item}`}
@@ -96,23 +96,23 @@ const Nav = () => {
 
       {/* Hover underline styles */}
       <style>{`
-  .hover-underline::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -2px;
-    transform: translateX(-50%) scaleX(0);
-    transform-origin: center;
-    width: 100%;
-    height: 2px;
-    background-color: #61CE70;
-    transition: transform 0.3s ease-in-out;
-  }
+        .hover-underline::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -2px;
+          transform: translateX(-50%) scaleX(0);
+          transform-origin: center;
+          width: 100%;
+          height: 2px;
+          background-color: #61CE70;
+          transition: transform 0.3s ease-in-out;
+        }
 
-  .hover-underline:hover::after {
-    transform: translateX(-50%) scaleX(1);
-  }
-`}</style>
+        .hover-underline:hover::after {
+          transform: translateX(-50%) scaleX(1);
+        }
+      `}</style>
 
     </div>
   );

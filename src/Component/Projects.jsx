@@ -38,6 +38,7 @@ const Projects = () => {
       thumbnailImage: EcommerceImage,
       category: "FullStack",
       clintLink: "https://github.com/BardavalGovind/Ecommerce-Website",
+      LiveLInk: "https://prepmateai.vercel.app/", // Same live link for both projects
     },
   ];
 

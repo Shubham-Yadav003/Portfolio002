@@ -14,6 +14,7 @@ import StarryBackground from "./Component/StarryBackground";
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 import Experience from "./Component/Experience";
 import Certificates from './Component/Certificates';
+import Achievement from './Component/Achievement';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Projects/>
           <Certificates/>
           <Experience/>
+          <Achievement/>
           <Education/>
           <Footer/>
         </div>

@@ -26,6 +26,7 @@ const Education = () => {
 							</h1>
 							<p className="text-lg text-gray-700 font-medium">B.Tech 3rd Year in Computer Science</p>
 							<p className="text-lg text-gray-500">Lovely Professional University, India</p>
+							<p className="text-lg text-gray-500">2022 - 2026</p> {/* Added year */}
 						</div>
 
 						{/* Intermediate Section */}
@@ -35,6 +36,7 @@ const Education = () => {
 							</h1>
 							<p className="text-lg text-gray-700 font-medium">Sri Venkateshwara Junior College</p>
 							<p className="text-lg text-gray-500">Nizamabad, Telangana</p>
+							<p className="text-lg text-gray-500">2020 - 2022</p> {/* Added year */}
 						</div>
 
 						{/* 10th Standard Section */}
@@ -44,6 +46,7 @@ const Education = () => {
 							</h1>
 							<p className="text-lg text-gray-700 font-medium">TSRS Boys Madnoor</p>
 							<p className="text-lg text-gray-500">Kamareddy, Telangana</p>
+							<p className="text-lg text-gray-500">2014 - 2020</p> {/* Added year */}
 						</div>
 					</div>
 				</div>

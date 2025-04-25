@@ -88,13 +88,13 @@ import "react-toastify/dist/ReactToastify.css";
 			</div>
 		  </div>
   
-		  <div className="flex items-start gap-4 text-lg">
+		  {/* <div className="flex items-start gap-4 text-lg">
 			<FaHome size={30} className="text-[#61CE70]" />
 			<div>
 			  <h3 className="font-semibold">Permanent Address</h3>
 			  <p>[Kangti, Sangareddy, Hyderabad, Telangana]</p>
 			</div>
-		  </div>
+		  </div> */}
   
 		  <div className="flex items-start gap-4 text-lg">
 			<FaLocationDot size={30} className="text-[#61CE70]" />
