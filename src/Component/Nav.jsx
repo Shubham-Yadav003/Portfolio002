@@ -22,33 +22,37 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
 
-  useGSAP(
-    () => {
-      gsap.to(".box", { y: 100, stagger: 0.1, duration: 1, ease: "bounce.out", repeatDelay: 2 });
-    },
-    { scope: container }
-  );
+  useGSAP(() => {
+    gsap.to(".box", {
+      y: 100,
+      stagger: 0.1,
+      duration: 1,
+      ease: "bounce.out",
+      repeatDelay: 2,
+    });
+  }, { scope: container });
 
   return (
     <div ref={container} className="sticky navbar inset-0 bg-black bg-opacity-50 backdrop-blur-md text-white top-0 z-[99999]">
       <div className="navbar flex items-center justify-between px-6 py-4 lg:px-20 lg:py-6 lg:max-w-[1800px] w-full mx-auto bg-transparent">
         {/* Logo Section */}
         <div className="flex-1">
-          <a href="#home" className='font-bold text-2xl text-[#3b45d2]'>
-            Bardaval Govind
-          </a>
+          <a href="#home" className="font-bold text-2xl text-[#3b45d2]">Bardaval Govind</a>
         </div>
 
         {/* Desktop Navbar Links */}
         <div className="flex-none hidden lg:flex">
           <ul className="menu menu-horizontal flex space-x-8 text-[#61CE70]">
-            <li><a className="box hover:text-green-400 transition-all duration-300" href="#About">About Me</a></li>
-            <li><a className="box hover:text-green-400 transition-all duration-300" href="#Skills">Skills</a></li>
-            <li><a className="box hover:text-green-400 transition-all duration-300" href="#Projects">Projects</a></li>
-            <li><a className="box hover:text-green-400 transition-all duration-300" href="#Certificates">Certificates</a></li>
-            <li><a className="box hover:text-green-400 transition-all duration-300" href="#Experience">Experience</a></li>
-            <li><a className="box hover:text-green-400 transition-all duration-300" href="#Education">Education</a></li>
-            <li><a className="box hover:text-green-400 transition-all duration-300" href="#Contact">Contact</a></li>
+            {["About", "Skills", "Projects", "Certificates", "Experience", "Education", "Contact"].map((item, idx) => (
+              <li key={idx}>
+                <a
+                  className="relative transition-all duration-300 box hover:text-green-400"
+                  href={`#${item}`}
+                >
+                  <span className="hover-underline">{item}</span>
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -68,14 +72,19 @@ const Nav = () => {
             {isDropdownOpen && (
               <ul
                 tabIndex={0}
-                className="menu menu-sm space-y-10 absolute -ml-2 duration-125 z-[1] p-2 shadow bg-base-100 rounded-box py-4 h-screen w-screen text-center items-center pt-10"
+                className="menu menu-sm space-y-10 absolute -ml-2 duration-125 z-[1] p-2 shadow bg-base-100 rounded-box py-4 h-screen w-screen text-center items-center pt-10 text-black"
                 onClick={closeDropdown}
               >
-                <li><a href="#About">About Me</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                {["About", "Skills", "Projects", "Education", "Contact"].map((item, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={`#${item}`}
+                      className="hover:text-green-500 transition duration-300 relative"
+                    >
+                      <span className="hover-underline">{item}</span>
+                    </a>
+                  </li>
+                ))}
               </ul>
             )}
           </div>
@@ -84,6 +93,27 @@ const Nav = () => {
           </a>
         </div>
       </div>
+
+      {/* Hover underline styles */}
+      <style>{`
+  .hover-underline::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 2px;
+    background-color: #61CE70;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hover-underline:hover::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+`}</style>
+
     </div>
   );
 };

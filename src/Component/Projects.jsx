@@ -13,7 +13,12 @@ const Projects = () => {
     {
       title: "PrepMate",
       description:
-        "Developed a full-stack notes platform with CRUD features for 100+ users, supporting seamless notes management. Integrated PDF upload/viewing and voice-based features, including speech-to-text and text-to-speech, for 20+ visually impaired users.",
+        "PrepMate is notes platform with CRUD features, integrated PDF upload/viewing and voice-based features, including speech-to-text and text-to-speech",
+      keyFeatures: [
+        // "PDF upload and viewer",
+        // "Speech-to-text & Text-to-speech functionality",
+        "Tech: React, Nodejs, Express, MongoDB, Tailwind CSS",
+      ],
       thumbnailImage: prepmate,
       category: "FullStack",
       clintLink: "https://github.com/BardavalGovind/PrepMate",
@@ -22,7 +27,14 @@ const Projects = () => {
     {
       title: "MegaMart",
       description:
-        "Built a MERN-based e-commerce platform with category-wise browsing and secure Braintree payment integration. Optimized RESTful APIs for CRUD, authentication, and order processing, reducing server load by 30%. Added advanced filtering & personalized recommendations, boosting user engagement by 20%.",
+        "A full-fledged e-commerce website that allows users to browse products, add to cart, create an account, place orders, and track order history. Admin panel for product management.",
+      keyFeatures: [
+        // "User authentication (JWT)",
+        // "Role-based access (admin/user)",
+        // "Product search & filter",
+        // "Payment gateway integration",
+        "Tech: React, Nodejs, Express, MongoDB, Bootstrap",
+      ],
       thumbnailImage: EcommerceImage,
       category: "FullStack",
       clintLink: "https://github.com/BardavalGovind/Ecommerce-Website",
@@ -47,7 +59,7 @@ const Projects = () => {
       <div className="text-center">
         <h1 className="text-2xl md:text-4xl lg:text-5xl mb-4">My Projects</h1>
         <p className="text-2xl md:text-3xl lg:text-5xl text-[#61CE70]">
-          -----what I know ------
+          -----Things I've Built & Explored ------
         </p>
       </div>
 
@@ -64,7 +76,7 @@ const Projects = () => {
               <img
                 src={item?.thumbnailImage}
                 alt={item?.title}
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover" // Removed border styles, added rounded-lg for image corners
               />
             </div>
 
@@ -73,6 +85,14 @@ const Projects = () => {
               <div className="bg-[#61CE70]/20 backdrop-blur-lg border border-white/20 shadow-lg p-6 rounded-lg flex-1">
                 <h1 className="text-4xl">{item?.title}</h1>
                 <p className="text-lg mt-5">{item?.description}</p>
+
+                {item?.keyFeatures && (
+                  <ul className="list-disc list-inside mt-4 text-base">
+                    {item.keyFeatures.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
 
               <div className="flex justify-between mt-4">
