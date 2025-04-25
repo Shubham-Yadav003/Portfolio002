@@ -6,7 +6,6 @@ import EcommerceImage from "../assets/EcommerceImage.png";
 // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
 
 const Projects = () => {
   const Data = [
@@ -15,8 +14,6 @@ const Projects = () => {
       description:
         "PrepMate is notes platform with CRUD features, integrated PDF upload/viewing and voice-based features, including speech-to-text and text-to-speech",
       keyFeatures: [
-        // "PDF upload and viewer",
-        // "Speech-to-text & Text-to-speech functionality",
         "Tech: React, Nodejs, Express, MongoDB, Tailwind CSS",
       ],
       thumbnailImage: prepmate,
@@ -29,10 +26,6 @@ const Projects = () => {
       description:
         "A full-fledged e-commerce website that allows users to browse products, add to cart, create an account, place orders, and track order history. Admin panel for product management.",
       keyFeatures: [
-        // "User authentication (JWT)",
-        // "Role-based access (admin/user)",
-        // "Product search & filter",
-        // "Payment gateway integration",
         "Tech: React, Nodejs, Express, MongoDB, Bootstrap",
       ],
       thumbnailImage: EcommerceImage,
@@ -77,14 +70,14 @@ const Projects = () => {
               <img
                 src={item?.thumbnailImage}
                 alt={item?.title}
-                className="w-full h-full object-cover" // Removed border styles, added rounded-lg for image corners
+                className="w-full h-full object-cover rounded-lg"
               />
             </div>
 
             {/* Text content container */}
             <div className="lg:w-[450px] min-h-[340px] h-full flex flex-col justify-between">
               <div className="bg-[#61CE70]/20 backdrop-blur-lg border border-white/20 shadow-lg p-6 rounded-lg flex-1">
-                <h1 className="text-4xl">{item?.title}</h1>
+                <h1 className="text-4xl font-semibold">{item?.title}</h1>
                 <p className="text-lg mt-5">{item?.description}</p>
 
                 {item?.keyFeatures && (
@@ -96,30 +89,37 @@ const Projects = () => {
                 )}
               </div>
 
-              <div className="flex justify-between mt-4">
-                <Link
-                  to={item?.clintLink}
-                  className="btn hover:bg-[#4CAB58] flex-1 rounded-none text-black bg-[#61CE70]"
+              {/* Enhanced buttons */}
+              <div className="flex flex-wrap gap-4 mt-6">
+                <a
+                  href={item?.clintLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 shadow-md transition-transform hover:scale-105"
                 >
-                  <FaGithub /> GitHub Link
-                </Link>
+                  <FaGithub size={18} /> GitHub
+                </a>
 
                 {item?.serverLink && (
-                  <Link
-                    to={item?.serverLink}
-                    className="btn hover:bg-[#4CAB58] flex-1 rounded-none text-black bg-[#61CE70]"
+                  <a
+                    href={item?.serverLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 shadow-md transition-transform hover:scale-105"
                   >
-                    <FaGithub /> Server side
-                  </Link>
+                    <FaGithub size={18} /> Server Code
+                  </a>
                 )}
 
                 {item?.LiveLInk && (
-                  <Link
-                    to={item?.LiveLInk}
-                    className="btn hover:bg-[#4CAB58] flex-1 rounded-none text-black bg-[#61CE70]"
+                  <a
+                    href={item?.LiveLInk}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-[#61CE70] text-black rounded-lg hover:bg-[#4CAB58] shadow-md transition-transform hover:scale-105"
                   >
-                    <FaExternalLinkAlt /> Visit website
-                  </Link>
+                    <FaExternalLinkAlt size={16} /> Visit Site
+                  </a>
                 )}
               </div>
             </div>
