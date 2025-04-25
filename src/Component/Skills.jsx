@@ -9,7 +9,7 @@ import mongoDB from "../assets/icons/mongoDB.svg"
 import react from "../assets/icons/react.json"
 import nodeJs from "../assets/icons/nodeJs.json"
 import expressjs from "../assets/icons/expressjs.svg"
-import nextjs from "../assets/icons/nodeJS.json"
+import nextjs from "../assets/icons/nextjs.webp"
 import laravel from "../assets/icons/laravel.svg"
 import Lottie from "lottie-react";
 const Skills = () => {
