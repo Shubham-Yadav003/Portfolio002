@@ -1,5 +1,5 @@
 import React from 'react';
-import image from "../assets/profileImage.jpeg"
+import image from "../assets/profileImage.jpeg";
 
 const AboutMe = () => {
     return (
@@ -12,17 +12,18 @@ const AboutMe = () => {
             <div className='flex md:p-5 max-h-[700px] justify-center items-center gap-10 lg:gap-28 flex-col-reverse md:flex-row-reverse mx-auto mt-20'>
                 <div data-aos="fade-up" className='text-justify md:text-left md:w-1/2 space-y-5 lg:w-[700px] text-xl p-4'>
                     <p className="leading-relaxed text-justify">
-                        Hey there! I'm Govind Bardaval, a full-stack web developer and problem-solving enthusiast with a strong foundation in C++, JavaScript, and the MERN stack. I'm passionate about building user-centric applications that are both visually appealing and highly functional.
+                        I'm <strong className='text-[#61CE70]'>Bardaval Bardaval</strong>, a <strong className='text-[#61CE70]'>full-stack web developer</strong> skilled in <strong className='text-[#61CE70]'>C++, JavaScript</strong>, and the <strong className='text-[#61CE70]'>MERN stack</strong>. I specialize in building user-friendly, functional applications with modern technologies like <strong className='text-[#61CE70]'>ReactJS, Node.js</strong>, and <strong className='text-[#61CE70]'>MongoDB</strong>.
                     </p>
 
                     <p className='leading-relaxed text-justify'>
-                        From crafting intuitive frontends using React, Tailwind, and Bootstrap, to developing secure and scalable backends with Node.js, Express, and MongoDB — I love turning innovative ideas into impactful web solutions. I’ve also solved 500+ coding problems on platforms like LeetCode and GFG, which strengthens my logical and algorithmic thinking.
+                        I’ve solved <strong className='text-[#61CE70]'>500+ coding problems</strong> across platforms like <strong className='text-[#61CE70]'>LeetCode</strong> and <strong className='text-[#61CE70]'>GFG</strong>, enhancing my problem-solving skills and algorithms expertise.
                     </p>
 
                     <p className='leading-relaxed text-justify'>
-                        Currently exploring AI integrations and optimizing user experiences through accessible design, I'm always eager to learn, collaborate, and push boundaries in tech.
+                        Always keen to learn, I’m currently exploring <strong className='text-[#61CE70]'>AI integrations</strong> and optimizing user experiences in tech. I enjoy building intuitive, scalable solutions with a focus on <strong className='text-[#61CE70]'>accessibility</strong> and <strong className='text-[#61CE70]'>performance</strong>.
                     </p>
                 </div>
+
                 <div>
                     <div
                         data-aos="zoom-in"

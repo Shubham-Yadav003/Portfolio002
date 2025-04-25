@@ -5,7 +5,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Nav from "./Component/Nav";
 import Banner from "./Component/Banner";
-// import AboutMe from "./Component/AboutMe";
+import AboutMe from "./Component/AboutMe";
 import Skills from "./Component/Skills";
 import Projects from "./Component/Projects";
 import Footer from "./Component/Footer";
@@ -28,7 +28,7 @@ function App() {
         <div className=" container mx-auto  sticky top-0 z-[999] ">
           <Nav/>
           <Banner/>
-          {/* <AboutMe/> */}
+          <AboutMe/>
           <Skills/>
           <Projects/>
           <Certificates/>

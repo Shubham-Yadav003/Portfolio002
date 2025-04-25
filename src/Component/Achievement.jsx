@@ -1,6 +1,6 @@
 import React from 'react';
-import image1 from "../assets/image1.png"; // Update with actual image path
-import image2 from "../assets/image2.png"; // Update with actual image path
+import image1 from "../assets/image1.png"; // Hackerrank certificate
+import image2 from "../assets/image2.png"; // LeetCode certificate
 
 const Achievement = () => {
     return (
@@ -14,22 +14,24 @@ const Achievement = () => {
                 </p>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-center gap-5 lg:gap-10 my-10 lg:my-10">
-                {/* Image 1 */}
-                <div className='w-full md:w-1/2 flex justify-center items-center p-5'>
+            <div className="flex flex-col md:flex-row justify-center gap-5 lg:gap-8 my-10">
+                {/* HackerRank Achievement */}
+                <div className='w-full md:w-1/2 flex flex-col justify-center items-center p-5'>
+                    <h3 className="text-xl font-semibold text-[#61CE70] mb-3">HackerRank</h3>
                     <img 
                         src={image1} 
-                        className='rounded-3xl w-[300px] hover:scale-105 transition-transform duration-300' 
-                        alt="Achievement Image 1" 
+                        className='rounded-xl w-full max-w-[400px] h-[300px] object-contain hover:scale-105 transition-transform duration-300' 
+                        alt="HackerRank Certificate" 
                     />
                 </div>
 
-                {/* Image 2 */}
-                <div className='w-full md:w-1/2 flex justify-center items-center p-5'>
+                {/* LeetCode Achievement */}
+                <div className='w-full md:w-1/2 flex flex-col justify-center items-center p-5'>
+                    <h3 className="text-xl font-semibold text-[#61CE70] mb-3">LeetCode</h3>
                     <img 
                         src={image2} 
-                        className='rounded-3xl w-[300px] hover:scale-105 transition-transform duration-300' 
-                        alt="Achievement Image 2" 
+                        className='rounded-xl w-full max-w-[400px] h-[300px] object-contain hover:scale-105 transition-transform duration-300' 
+                        alt="LeetCode Certificate" 
                     />
                 </div>
             </div>
