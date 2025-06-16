@@ -37,7 +37,7 @@ const Nav = () => {
       <div className="navbar flex items-center justify-between px-6 py-4 lg:px-20 lg:py-6 lg:max-w-[1800px] w-full mx-auto bg-transparent">
         {/* Logo Section */}
         <div className="flex-1">
-          <a href="#home" className="font-bold text-2xl text-[#3b45d2]">Bardaval Govind</a>
+          <a href="#home" className="font-bold text-2xl text-[#3b45d2]">Shubham Kumar Yadav</a>
         </div>
 
         {/* Desktop Navbar Links */}

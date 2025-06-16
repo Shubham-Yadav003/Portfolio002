@@ -10,28 +10,30 @@ import "aos/dist/aos.css";
 const Projects = () => {
   const Data = [
     {
-      title: "PrepMate",
+      title: "DailyBlog",
       description:
-        "PrepMate is notes platform with CRUD features, integrated PDF upload/viewing and voice-based features, including speech-to-text and text-to-speech",
+        "It is a space where readers explore, and admins create. A place for sharing ideas, gaining insights, and building a vibrant community—one post at a time!",
+
+        
       keyFeatures: [
         "Tech: React, Nodejs, Express, MongoDB, Tailwind CSS",
       ],
       thumbnailImage: prepmate,
       category: "FullStack",
-      clintLink: "https://github.com/BardavalGovind/PrepMate",
-      LiveLInk: "https://prepmateai.vercel.app/",
+      clintLink: "https://github.com/Shubham-Yadav003/DailyBlogs",
+      LiveLInk: "",
     },
     {
-      title: "MegaMart",
+      title: "EduBlaze",
       description:
-        "A full-fledged e-commerce website that allows users to browse products, add to cart, create an account, place orders, and track order history. Admin panel for product management.",
+        "It is a dynamic MERN-based e-learning platform designed for seamless learning and teaching. Learners explore interactive courses, while educators create, manage, and engage—all in a user-friendly digital space! ",
       keyFeatures: [
         "Tech: React, Nodejs, Express, MongoDB, Bootstrap",
       ],
       thumbnailImage: EcommerceImage,
       category: "FullStack",
-      clintLink: "https://github.com/BardavalGovind/Ecommerce-Website",
-      LiveLInk: "https://prepmateai.vercel.app/", // Same live link for both projects
+      clintLink: "https://github.com/Shubham-Yadav003/EduBlaze",
+      LiveLInk: "", // Same live link for both projects
     },
   ];
 

@@ -27,7 +27,7 @@ const Achievement = () => {
 
                 {/* LeetCode Achievement */}
                 <div className='w-full md:w-1/2 flex flex-col justify-center items-center p-5'>
-                    <h3 className="text-xl font-semibold text-[#61CE70] mb-3">LeetCode</h3>
+                    <h3 className="text-xl font-semibold text-[#61CE70] mb-3">Codolio</h3>
                     <img 
                         src={image2} 
                         className='rounded-xl w-full max-w-[400px] h-[300px] object-contain hover:scale-105 transition-transform duration-300' 

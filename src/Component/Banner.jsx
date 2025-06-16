@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaDownload } from "react-icons/fa";
 import pdf from "../assets/resume.pdf"; // Ensure this is in the right path
-import ProfileImage from "../assets/profileImage.jpeg"; // Ensure this is in the right path
+import ProfileImage from "../assets/profileImage.jpg"; // Ensure this is in the right path
 import "./banner.css";
 
 const Banner = () => {

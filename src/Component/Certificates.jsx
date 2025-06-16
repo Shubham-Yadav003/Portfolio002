@@ -7,29 +7,18 @@ import dsa from "../assets/dsa.png";
 import nptel from "../assets/nptel.png";
 
 const certificatesData = [
+    
     {
-        title: "Responsible & Safe AI Systems",
+        title: "Cloud Computing",
         organization: "NPTEL",
-        Completion: "October 2024",
-        mobileDuration: "October 2024",
-        image: nptel,
-        bullets: [
-            "Studied ethical, social, and safety aspects of AI systems, including fairness, transparency, and interpretability.",
-            "Explored the impact of modern AI models like ChatGPT and DALL·E, and learned approaches for safer AI development."
-        ],
-        technologies: ["AI Ethics", "Responsible AI", "ChatGPT", "DALL·E"]
-    },
-    {
-        title: "Frontend Development Bootcamp",
-        organization: "Coursera",
-        Completion: "April 2024",
-        mobileDuration: "April 2024",
+        Completion: "November 2024",
+        mobileDuration: "November 2024",
         image: frontend,
         bullets: [
-            "Learned core frontend technologies including HTML, CSS, and JavaScript.",
-            "Created responsive websites and interactive components with React.",
+            "Gained foundational knowledge in cloud computing concepts, including service models (IaaS, PaaS, SaaS) and deployment models (public, private, hybrid).",
+            
         ],
-        technologies: ["HTML", "CSS", "JavaScript", "React"]
+        technologies: ["Cloud Computing", "IaaS", "PaaS", "SaaS", "Deployment Models"]
     },
     {
         title: "Full Stack Web Development: MERN Stack",
@@ -47,8 +36,8 @@ const certificatesData = [
     {
         title: "Mastering DSA using C and C++",
         organization: "Udemy",
-        Completion: "November 2023",
-        mobileDuration: "November 2023",
+        Completion: "February 2024",
+        mobileDuration: "February 2024",
         image: dsa,
         bullets: [
             "Learned foundational Data Structures and Algorithms using C and C++, including arrays, linked lists, and sorting techniques.",
@@ -57,16 +46,16 @@ const certificatesData = [
         technologies: ["C", "C++", "Data Structures", "Algorithms"]
     },
     {
-        title: "Intermediate DSA",
-        organization: "LearnYard",
-        Completion: "July 2024",
-        mobileDuration: "July 2024",
+        title: "Server Side Scripting with Node.js",
+        organization: "Coursera",
+        Completion: "May 2024",
+        mobileDuration: "May 2024",
         image: Learnyard,
         bullets: [
-            "Learned intermediate-level DSA concepts including STL, trees, graphs, and dynamic programming.",
-            "Solved 500+ problems across platforms like LeetCode, HackerRank, and Codeforces, strengthening problem-solving skills.",
+            "Gained in-depth knowledge of server-side scripting using Node.js.",
+            
         ],
-        technologies: ["C++", "STL", "Trees", "Graphs", "DP", "LeetCode", "HackerRank"]
+        technologies: ["Node.js", "Server-Side Scripting", "JavaScript"]
     },
 ];
 

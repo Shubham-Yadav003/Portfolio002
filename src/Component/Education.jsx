@@ -34,9 +34,9 @@ const Education = () => {
 							<h1 className="text-3xl mb-3 font-semibold text-[#2d2d2d] hover:text-[#61CE70] transition-colors duration-300">
 								Intermediate
 							</h1>
-							<p className="text-lg text-gray-700 font-medium">Sri Venkateshwara Junior College</p>
-							<p className="text-lg text-gray-500">Nizamabad, Telangana</p>
-							<p className="text-lg text-gray-500">2020 - 2022</p> {/* Added year */}
+							<p className="text-lg text-gray-700 font-medium">Divine Public School </p>
+							<p className="text-lg text-gray-500">Gorakhpur, Uttar Pradesh</p>
+							<p className="text-lg text-gray-500">2021 - 2022</p> 
 						</div>
 
 						{/* 10th Standard Section */}
@@ -44,9 +44,9 @@ const Education = () => {
 							<h1 className="text-3xl mb-3 font-semibold text-[#2d2d2d] hover:text-[#61CE70] transition-colors duration-300">
 								10th Standard
 							</h1>
-							<p className="text-lg text-gray-700 font-medium">TSRS Boys Madnoor</p>
-							<p className="text-lg text-gray-500">Kamareddy, Telangana</p>
-							<p className="text-lg text-gray-500">2014 - 2020</p> {/* Added year */}
+							<p className="text-lg text-gray-700 font-medium">Divine Public School</p>
+							<p className="text-lg text-gray-500">Gorakhpur, Uttar Pradesh</p>
+							<p className="text-lg text-gray-500">2019 - 2020</p> {/* Added year */}
 						</div>
 					</div>
 				</div>

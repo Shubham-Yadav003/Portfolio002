@@ -62,7 +62,7 @@ import "react-toastify/dist/ReactToastify.css";
 		  <div className="flex flex-wrap gap-6 text-lg">
 			<a
 			  target="_blank"
-			  href="https://www.linkedin.com/in/bardavalgovind/"
+			  href="https://www.linkedin.com/in/shubhamyadav007/"
 			  rel="noopener noreferrer"
 			  className="flex items-center gap-2 hover:text-[#61CE70] transition"
 			>
@@ -71,7 +71,7 @@ import "react-toastify/dist/ReactToastify.css";
 			</a>
 			<a
 			  target="_blank"
-			  href="https://github.com/BardavalGovind"
+			  href="https://github.com/Shubham-Yadav003"
 			  rel="noopener noreferrer"
 			  className="flex items-center gap-2 hover:text-[#61CE70] transition"
 			>
@@ -84,7 +84,7 @@ import "react-toastify/dist/ReactToastify.css";
 			<MdEmail size={30} className="text-[#61CE70]" />
 			<div>
 			  <h3 className="font-semibold">Email</h3>
-			  <p>bardavalgovind2005@gmail.com</p>
+			  <p>shubhamy03v@gmail.com</p>
 			</div>
 		  </div>
   
@@ -100,7 +100,7 @@ import "react-toastify/dist/ReactToastify.css";
 			<FaLocationDot size={30} className="text-[#61CE70]" />
 			<div>
 			  <h3 className="font-semibold">Present Address</h3>
-			  <p>[Kangti, Sangareddy, Hyderabad, Telangana]</p>
+			  <p>[Gorakhpur, Uttar Pradesh]</p>
 			</div>
 		  </div>
 		</div>

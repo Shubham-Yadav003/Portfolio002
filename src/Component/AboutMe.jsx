@@ -1,5 +1,5 @@
 import React from 'react';
-import image from "../assets/profileImage.jpeg";
+import ProfileImg from "../assets/profileImage.jpg";
 
 const AboutMe = () => {
     return (
@@ -12,11 +12,11 @@ const AboutMe = () => {
             <div className='flex md:p-5 max-h-[700px] justify-center items-center gap-10 lg:gap-28 flex-col-reverse md:flex-row-reverse mx-auto mt-20'>
                 <div data-aos="fade-up" className='text-justify md:text-left md:w-1/2 space-y-5 lg:w-[700px] text-xl p-4'>
                     <p className="leading-relaxed text-justify">
-                        I'm <strong className='text-[#61CE70]'>Bardaval Bardaval</strong>, a <strong className='text-[#61CE70]'>full-stack web developer</strong> skilled in <strong className='text-[#61CE70]'>C++, JavaScript</strong>, and the <strong className='text-[#61CE70]'>MERN stack</strong>. I specialize in building user-friendly, functional applications with modern technologies like <strong className='text-[#61CE70]'>ReactJS, Node.js</strong>, and <strong className='text-[#61CE70]'>MongoDB</strong>.
+                        I'm <strong className='text-[#61CE70]'>Shubham </strong>, a <strong className='text-[#61CE70]'>full-stack web developer</strong> skilled in <strong className='text-[#61CE70]'>C++, JavaScript</strong>, and the <strong className='text-[#61CE70]'>MERN stack</strong>. I specialize in building user-friendly, functional applications with modern technologies like <strong className='text-[#61CE70]'>ReactJS, Node.js</strong>, and <strong className='text-[#61CE70]'>MongoDB</strong>.
                     </p>
 
                     <p className='leading-relaxed text-justify'>
-                        I’ve solved <strong className='text-[#61CE70]'>500+ coding problems</strong> across platforms like <strong className='text-[#61CE70]'>LeetCode</strong> and <strong className='text-[#61CE70]'>GFG</strong>, enhancing my problem-solving skills and algorithms expertise.
+                        I’ve solved <strong className='text-[#61CE70]'>430+ coding problems</strong> across platforms like <strong className='text-[#61CE70]'>LeetCode</strong> and <strong className='text-[#61CE70]'>GFG</strong>, enhancing my problem-solving skills and algorithms expertise.
                     </p>
 
                     <p className='leading-relaxed text-justify'>
@@ -31,8 +31,8 @@ const AboutMe = () => {
                     >
                         <img
                             className="rounded-full h-full object-cover w-full"
-                            src={image}
-                            alt="Govind Bardaval"
+                            src={ProfileImg}
+                            alt="Shubham Kumar Yadav"
                         />
                     </div>
                 </div>
