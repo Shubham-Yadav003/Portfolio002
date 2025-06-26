@@ -1,17 +1,18 @@
-# Portfolio
+👋 Hi, I'm [Shubham Kumar Yadav]
 
-This is my personal portfolio built using React and Vite.
+Passionate Developer | Lifelong Learner | Tech Enthusiast
 
-# Getting Started !
+Welcome to my digital portfolio — a curated showcase of who I am and what I love building.
 
--> Clone the Repository
+Here, you'll find:
 
-git clone https://github.com/username/repo-name.git
+🚀 Projects that reflect my hands-on experience with real-world problems
 
--> Go Into the Project Directory
+🎓 Education that shaped my foundation in computer science
 
-cd Portfolio002
+🛠️ Skills ranging from front-end frameworks to backend logic
 
-Then -> npm install and you are good to go ! 
+📜 Certificates that mark my milestones of continuous learning
 
-
+Whether you're a recruiter, collaborator, or fellow techie — I’m excited you're here.
+Dive in and explore my journey through code, creativity, and curiosity.
